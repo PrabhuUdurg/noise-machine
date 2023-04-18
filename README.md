@@ -1,2 +1,3 @@
 # Noise-Machine
-A musical application to creating chaotic ambient sounds 
+A musical application for creating chaotic ambient sounds 
+
