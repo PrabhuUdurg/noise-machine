@@ -1,11 +1,14 @@
 from playsound import playsound
 from pydub import AudioSegment
-playsound('test1.wav')
 
 
 def chop_sound(file):
     sound = AudioSegment.from_file(file)
-    halfway_point = len(sound) // 2
-    first_half = sound[:halfway_point]
+    ten_seconds = 10 * 1000
+    first_10_seconds = sound[:ten_seconds]
+    # first_half.export("/nosie-machine/first_half.wav", format="wav")
+    sound.export("mashup.mp3", format="mp3")
+    playsound(sound)
 
-    first_half.export("/nosie-machine/first_half.mp3", format="wav")
+
+chop_sound('test1.wav')
