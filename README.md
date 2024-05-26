@@ -17,4 +17,4 @@ Finally, run noise file with such arguments:
 ```
 NOISE MACHINE CAN SUPPORT JUST WAV OR MP3 FORMATS.
 
-*Supported by United Noise*
+*Supported by iwouldcutmyhands*
