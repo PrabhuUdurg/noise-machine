@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>noiseMachine</class>
+ <widget class="QMainWindow" name="noiseMachine">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>noiseMachine</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>30</y>
+      <width>671</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="QCheckBox" name="chooseLength">
+         <property name="text">
+          <string>Choose the boundaries with knob</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QCheckBox" name="randomTrim">
+         <property name="text">
+          <string>Random Trim</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="Line" name="line">
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="morphButton">
+       <property name="text">
+        <string>MORPH!</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QDial" name="knob"/>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuNew">
+    <property name="title">
+     <string>New</string>
+    </property>
+    <addaction name="actionAdd_file_for_morph"/>
+   </widget>
+   <addaction name="menuNew"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionAdd_file_for_morph">
+   <property name="text">
+    <string>Add file for morph</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
